@@ -1,0 +1,190 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Bacasime Antique', serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* copy border to paris */
+    border-bottom: 2px solid crimson;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: crimson;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 10px;
+    transition: all 0.5s;
+}
+
+nav a:hover {
+    color: rgb(211, 126, 126);
+    border-bottom: 3px dotted rgb(211, 126, 126);
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Caprasimo', cursive;
+    font-size: 75px;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+h3 {
+    font-family: 'Caprasimo', cursive;
+    /* copy this 2 to paris */
+    text-transform: uppercase;
+    color: crimson;
+}
+
+/* line 60-91 copy to paris */
+.photo {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.photo article {
+    width: 270px;
+    height: 340px;
+    background-color: crimson;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo article p {
+    background-color: #fff;
+    opacity: 0.75;
+    width: 80%;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.photo article:nth-child(1) {
+    background-image: url(./images/telephone.jpg);
+}
+
+.photo article:nth-child(2) {
+    background-image: url(./images/londoneye.jpg);
+}
+
+.photo article:nth-child(3) {
+    background-image: url(./images/buses.jpg);
+}
+
+.photo article:nth-child(4) {
+    background-image: url(./images/bigben.jpg);
+}
+
+.preview {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.history p {
+    text-align: justify;
+}
+
+.history p::first-letter {
+    font-size: 32px;
+    background-color: crimson;
+    color: #fff;
+    padding: 0 5px 0 5px;
+}
+
+.history p a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    background-color: crimson;
+    color: #fff;
+    font-weight: 700;
+    padding: 5px;
+    display: block;
+    max-width: 150px;
+    margin-left: auto;
+    text-align: right;
+    margin-top: 10px;
+}
+
+
+.footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 50px;
+}
+
+iframe {
+    max-width: 560px;
+    width: 100%;
+}
+
+@media(max-width:900px) {
+    .header {
+        /* display: flex; */
+        flex-direction: column;
+    }
+    .container {
+        max-width: 90%;
+    }
+    nav {
+        margin-right: 0;
+    }
+
+    h3 {
+        max-width: 560px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .history {
+        max-width: 560px;
+    }
+
+}
+
+@media (max-width:600px) {
+    h1 {
+        font-size: 40px;
+    }
+
+
+    h3 {
+        max-width: 375px;
+        text-align: center;
+    }
+}
